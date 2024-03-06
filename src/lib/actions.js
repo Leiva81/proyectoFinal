@@ -197,7 +197,6 @@ export async function getPatrocinadores() {
       const precio = formData.get('precio')
       const color = formData.get('color')
   
-      const ids = await getPatrocinadoresIds()
       // let nacional = formData.get('nacional')
   
       // nacional = Boolean(nacional)
@@ -223,7 +222,6 @@ export async function getPatrocinadores() {
     const precio = formData.get('precio')
     const color = formData.get('color')
 
-    const ids = await getPatrocinadoresIds()
     
     // let nacional = formData.get('nacional')
   
