@@ -13,7 +13,7 @@ async function page({searchParams}) {
 
   return (
     <div>
-        <h3>Editar coche {searchParams.id}</h3>
+        
         <Form action={editCoche} title='Editar coche' coche={coche}  />
     </div>
   )

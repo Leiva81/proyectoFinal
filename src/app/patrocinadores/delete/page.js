@@ -13,7 +13,7 @@ async function page({ searchParams }) {
 
   return (
     <div>
-      <h3>Eliminar patrocinador {searchParams.id}</h3>
+     
       <Form action={deletePatrocinador} title='Eliminar patrocinador' patrocinador={patrocinador} disabled={true} />
     </div>
   )
