@@ -1,6 +1,7 @@
 import Form from "@/components/Form"
 import {prisma} from '@/lib/prisma'
 import { deletePatrocinador } from "@/lib/actions"
+import { redirect } from "next/navigation"
 
 export const dynamic = 'force-dynamic'
 
@@ -11,6 +12,9 @@ async function page({ searchParams }) {
     },
   })
 
+  if (sesion?.user.role !== 'ADMIN')
+  redirect('/patrocinadores')
+  
   return (
     <div>
      
